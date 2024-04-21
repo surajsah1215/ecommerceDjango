@@ -1,0 +1,6 @@
+<h1>Recommended Products</h1>
+<ul>
+  {% for product_item in product_list_items %}
+    {{ product_item|safe }}
+  {% endfor %}
+</ul>

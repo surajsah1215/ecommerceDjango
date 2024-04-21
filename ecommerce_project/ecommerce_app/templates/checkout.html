@@ -1,0 +1,9 @@
+
+<h1>Checkout</h1>
+<h3>Order Summary</h3>
+<ul>
+  {% for product in order.products.all %}
+    <li>{{ product.name }} - {{ product.price }}</li>
+  {% endfor %}
+</ul>
+<p>Total Price: {{ order.total_price }}</p>

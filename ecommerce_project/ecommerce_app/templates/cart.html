@@ -1,0 +1,7 @@
+
+<h1>Cart</h1>
+<ul>
+  {% for item in cart.cartitem_set.all %}
+    <li>{{ item.product.name }} - Quantity: {{ item.quantity }}</li>
+  {% endfor %}
+</ul>
